@@ -1,0 +1,12 @@
+- Universal Selector
+- Type selector
+- Class Selector
+- Id selector
+- Attribut selector
+- Decendent Selector
+- Child Selector
+- Adjacente Sibling selector
+- General Sibling Selector
+- Pseudo-class Selector (p:hover)
+- Pseudo-element Selector(p::first-letter)
+- Group Selector
