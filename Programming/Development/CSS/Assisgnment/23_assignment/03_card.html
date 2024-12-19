@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile card</title>
+    <!-- Added font awesome library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- CSS styling -->
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #1b1b1b;
+      }
+      .profile-container {
+        height: 500px;
+        max-width: 388px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgab(0, 0, 0, 0, 0.1);
+        padding: 25px;
+        width: 100%;
+        border-radius: 20px;
+      }
+      .profile-picture {
+        height: 140px;
+        width: 140px;
+        border-radius: 50%;
+        background-color: #2ca1f2;
+        padding: 3px;
+      }
+      .profile-picture .profile-image {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        border: 2px solid red;
+      }
+      /* .image-con {
+        background-color: #1ca1f2;
+        width: 100%;
+        border-radius: 20px;
+      } */
+
+      .profile-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile-details .profile-name {
+        font-size: 23px;
+        font-weight: bolder;
+        margin-top: 20px;
+      }
+      .profile-details .profile-status {
+        font-size: 16px;
+        font-weight: 500;
+        opacity: 0.75;
+        margin: 5px;
+      }
+
+      .social-icons {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
+      }
+      .social-icons .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #36a3fc;
+        color: #faebd7;
+        border-radius: 50%;
+        height: 34px;
+        width: 34px;
+        margin: 0 7px;
+        text-decoration: none;
+        font-size: 18px;
+      }
+      .action-btn {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .action-btn .action-b {
+        background-color: #0b6ebf;
+        padding: 12px;
+        margin: 0 18px;
+        color: white;
+        border-radius: 25px;
+        font-weight: 400;
+        font-size: 14px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+      .action-buttons .action-b:hover {
+        background-color: #094a8f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profile-container">
+      <div class="image-con">
+        <div class="profile-picture">
+          <img
+            src="./03_image.png"
+            alt="profile picture"
+            class="profile-image"
+          />
+        </div>
+      </div>
+      <div class="profile-details">
+        <span class="profile-name">Manoj Mondal</span>
+        <span class="profile-status">Freshers</span>
+      </div>
+      <div class="social-icons">
+        <a href="#" class="social-icon"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="#" class="social-icon"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="#" class="social-icon"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+      <div class="action-btn">
+        <button type="Feedback" class="action-b">Feedback</button>
+        <button type="Message" class="action-b">Message</button>
+      </div>
+    </div>
+  </body>
+</html>
