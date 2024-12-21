@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        height: 200vh;
+        padding: 20px;
+      }
+      .box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        color: white;
+      }
+      #one {
+        position: fixed;
+        background-color: green;
+        top: 20px;
+        left: 30px;
+      }
+      #two {
+        background-color: blue;
+        position: relative;
+        top: 220px;
+        left: 130px;
+      }
+      #three {
+        position: absolute;
+        background-color: yellow;
+        top: 30px;
+        left: 20px;
+      }
+      #four {
+        position: sticky;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="one">One</div>
+      <div class="box" id="two">Two</div>
+      <div class="box" id="three">Three</div>
+      <div class="box" id="four">Four</div>
+    </div>
+  </body>
+</html>
