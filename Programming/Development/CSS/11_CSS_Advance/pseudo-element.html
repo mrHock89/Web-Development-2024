@@ -98,12 +98,63 @@
       .btn2:hover::after {
         transform: translateX(0%);
       }
+
+      .btn3 {
+        height: 50px;
+        width: 200px;
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+        z-index: 1;
+        transition: 5s all ease-in-out;
+      }
+      .btn3::before {
+        content: "";
+        height: 100%;
+        width: 50%;
+        background-color: yellow;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-80%);
+        /* border-radius: 0 10px 10px 0; */
+        transition: 5s all ease-in-out;
+        z-index: -1;
+      }
+      .btn3::after {
+        content: "";
+        height: 100%;
+        width: 50%;
+        background-color: greenyellow;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translateX(80%);
+        /* border-radius: 10px 0 0 10px; */
+        transition: 5s all ease-in-out;
+        z-index: -1;
+      }
+      .btn3:hover::before {
+        transform: translateX(0%);
+      }
+      .btn3:hover::after {
+        transform: translateX(0%);
+      }
+      .btn3:hover {
+        border-color: white;
+      }
     </style>
   </head>
   <body>
     <div class="box">
       <button type="submit" class="btn1">Button-1</button>
       <button type="submit" class="btn2">Button-2</button>
+      <button type="submit" class="btn3">Button-3</button>
     </div>
   </body>
 </html>
