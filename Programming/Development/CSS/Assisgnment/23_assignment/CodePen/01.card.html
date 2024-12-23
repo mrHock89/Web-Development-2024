@@ -43,8 +43,13 @@
       }
       .main-image {
         object-fit: cover;
-        position: relative;
+        /* position: relative; */
         width: 100%;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+      }
+      .main-image:hover {
+        transform: scale(1.2);
       }
 
       .profile-image {
@@ -56,6 +61,11 @@
         left: 280px;
         z-index: 1;
         border: 5px solid white;
+        transition: transform 0.3s ease-in-out;
+        /* display: block; */
+      }
+      .profile-image:hover {
+        transform: scale(1.2);
       }
       .herpo-section {
         display: flex;
@@ -71,6 +81,10 @@
         font-size: 16px;
         padding: 10px;
         font-weight: 100;
+        transition: 0.3s ease-in-out;
+      }
+      h2:hover {
+        color: black;
       }
       h2 span {
         color: #5abab1;
@@ -81,6 +95,13 @@
         color: #999999;
         padding-left: 10px;
         margin-bottom: 15px;
+        transition: transform 0.3s ease-in-out;
+      }
+      p:hover {
+        display: block;
+        color: black;
+        transform: scale(1);
+        /* overflow: visible; */
       }
       .progress {
         display: flex;
@@ -98,6 +119,11 @@
         height: 100%;
         border-radius: 0 10px 10px 0;
       }
+      .progress:hover::after {
+        display: block;
+        content: attr("50% gathered");
+      }
+
       .number {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -109,11 +135,20 @@
         font-family: sans-serif;
         padding: 5px;
         margin: 1px 25px;
+        transition: transform 0.3s ease-in-out;
       }
       h3 > span {
         color: rgb(119, 115, 115);
         font-weight: 100;
         margin-top: 10px;
+        transition: font-weight 0.3s ease-in-out, color 0.3s ease-in-out;
+      }
+      h3 > span:hover {
+        font-weight: 300;
+        color: black;
+      }
+      h3:hover {
+        transform: scale(1.1);
       }
     </style>
   </head>
