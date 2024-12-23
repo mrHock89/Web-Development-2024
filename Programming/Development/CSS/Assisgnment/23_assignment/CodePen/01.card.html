@@ -1,0 +1,157 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card project</title>
+    <!-- Awesome font  icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        display: flex;
+        background-color: #1a1a1a;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        display: flex;
+        height: 500px;
+        width: 400px;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 20px;
+      }
+      .image-container {
+        height: 50%;
+        width: 100%;
+        object-fit: cover;
+        display: flex;
+        position: relative;
+      }
+      .main-image {
+        object-fit: cover;
+        position: relative;
+        width: 100%;
+      }
+
+      .profile-image {
+        position: absolute;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        top: 220px;
+        left: 280px;
+        z-index: 1;
+        border: 5px solid white;
+      }
+      .herpo-section {
+        display: flex;
+        font-family: sans-serif;
+      }
+      h1 {
+        font-weight: 400;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      h2 {
+        color: #999999;
+        font-size: 16px;
+        padding: 10px;
+        font-weight: 100;
+      }
+      h2 span {
+        color: #5abab1;
+        font-size: 20px;
+        cursor: pointer;
+      }
+      p {
+        color: #999999;
+        padding-left: 10px;
+        margin-bottom: 15px;
+      }
+      .progress {
+        display: flex;
+        background-color: rgb(230, 230, 230);
+        box-sizing: border-box;
+        height: 16px;
+        margin: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+      }
+      .progress-child {
+        background-color: green;
+        width: 50%;
+        display: block;
+        height: 100%;
+        border-radius: 0 10px 10px 0;
+      }
+      .number {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-between;
+        text-align: center;
+      }
+      h3 {
+        font-size: 12px;
+        font-family: sans-serif;
+        padding: 5px;
+        margin: 1px 25px;
+      }
+      h3 > span {
+        color: rgb(119, 115, 115);
+        font-weight: 100;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="image-container">
+        <img src="./smart-watch.jpg" alt="smart-watch" class="main-image" />
+        <img src="./image.png" alt="profile-pic" class="profile-image" />
+      </div>
+      <div class="hero-section">
+        <h1>Smart Watch</h1>
+        <h2>
+          by <span> Anirban <i class="fa-solid fa-tag"></i> Roy</span>
+        </h2>
+        <p class="details">
+          This is the watch that is best suitable for you and your success. The
+          dearm of yours.
+        </p>
+        <p>
+          <span
+            ><i
+              class="fa-solid fa-location-dot"
+              style="color: #5abab1"
+            ></i> </span
+          >India, WB
+        </p>
+        <div class="progress">
+          <div class="progress-child"></div>
+        </div>
+      </div>
+      <div class="number">
+        <h3 class="txt-1">
+          50% <br />
+          <span>funded</span>
+        </h3>
+        <h3 class="text-2">$5,000 <br /><span>target</span></h3>
+        <h3 class="text-3">100 <br /><span>day to go</span></h3>
+      </div>
+    </div>
+  </body>
+</html>
