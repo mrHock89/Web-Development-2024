@@ -200,6 +200,135 @@
       .btn4:hover {
         border-color: red;
       }
+      .btn5 {
+        height: 50px;
+        width: 200px;
+        border: 2px solid black;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.5s all ease;
+      }
+      .btn5::before {
+        content: "";
+        background-color: red;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translateY(-50%);
+        transition: 0.5s all ease-in-out;
+      }
+
+      .btn5::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background-color: red;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateY(50%);
+        transition: 0.5s all ease-in;
+      }
+
+      .btn5:hover {
+        border-color: red;
+      }
+      .btn5:hover::before {
+        transform: translateY(-100%);
+      }
+      .btn5:hover::after {
+        transform: translateY(100%);
+      }
+      btn5:hover {
+        border-color: red;
+      }
+      .btn6,
+      .btn7 {
+        height: 50px;
+        width: 200px;
+        border: 2px solid black;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        background-color: #fff;
+        overflow: hidden;
+        box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.5s all ease;
+      }
+      .btn6::before {
+        content: "";
+        background-color: red;
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translateX(-100%);
+        transition: 0.5s all ease-in-out;
+      }
+
+      .btn6::after {
+        content: "";
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        background-color: rgb(18, 163, 95);
+        top: 0;
+        right: 0;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: 0.5s all ease-in;
+      }
+
+      .btn6:hover {
+        border-color: red;
+      }
+      .btn6:hover::before {
+        transform: translateX(0%) rotate(180deg);
+      }
+      .btn6:hover::after {
+        transform: translateX(0%) rotate(180deg);
+      }
+      .btn7 {
+        border-color: black;
+        color: black;
+        /* overflow: visible; */
+      }
+      .btn7:hover {
+        border-color: white;
+        color: white;
+      }
+      .btn7::before {
+        content: "";
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transform: translateX(-1%) translateY(-40%) scale(0%);
+        border-radius: 50%;
+        transition: 0.5s all ease-in-out;
+      }
+      .btn7:hover::before {
+        transform: translateX(-1%) translateY(-40%) scale(100%);
+      }
     </style>
   </head>
   <body>
@@ -208,6 +337,10 @@
       <button type="submit" class="btn2">Button-2</button>
       <button type="submit" class="btn3">Button-3</button>
       <button type="submit" class="btn btn4">Button-4</button>
+      <button type="submit" class="btn5">Button-5</button>
+      <button type="submit" class="btn6">Button-6</button>
+      <button type="submit" class="btn7">Button-7</button>
+      <article><img src="" alt="" class="article1" /></article>
     </div>
   </body>
 </html>
