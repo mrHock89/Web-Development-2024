@@ -12,7 +12,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(./image.png);
+  background: linear-gradient(rgb(215, 216, 208), rgb(18, 65, 153));
   background-size: cover;
 }
 .calculator {
