@@ -8,4 +8,4 @@ Started new journey to web development
 
 - 24th December `Created calculator with minimal feature`
 
-![Clculator-Demo](./Programming/Development/Project/Demo/Screencast_20241224_124728.webm)
+![Clculator-Demo](./Programming/Development/Project/Demo/demo_calculator.gif)
