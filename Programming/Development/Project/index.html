@@ -4,15 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="calculator">
-      <input type="text" placeholder="0" />
+      <input type="text" placeholder="0" id="inputBox" readonly />
       <div class="row1">
         <button class="operator ac">AC</button>
         <button class="operator del">DEL</button>
         <button class="operator">%</button>
-        <button class="operator">/</button>
+        <button class="operator">÷</button>
       </div>
       <div class="row2">
         <button>7</button>
@@ -36,8 +41,9 @@
         <button>00</button>
         <button>0</button>
         <button>.</button>
-        <button>=</button>
+        <button class="equalBtn">=</button>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
